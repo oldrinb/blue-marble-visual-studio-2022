@@ -1,0 +1,29 @@
+# Author: Oldrin Barbulescu
+# Last modified: Jan 27, 2025
+ 
+
+newmtl earth
+
+illum 2
+
+Kd 1.0 1.0 1.0
+Ks 0.3 0.3 0.3
+Ke 1.0 1.0 1.0
+Ns 8.0
+d  1.0
+
+map_Kd land_ocean_ice_8192.png
+map_Ks specular_map_8192.tif
+map_emissive land_ocean_ice_lights_8192.tif
+map_Kn normal_map_4096.jpg
+
+
+
+newmtl clouds
+
+illum 1
+
+Kd 1.0 1.0 1.0
+d 1.0
+
+map_Kd cloud_combined_8192.tif
