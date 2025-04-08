@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\Scene.cpp">
+      <Filter>Source Files\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\camera\BaseCamera.cpp">
+      <Filter>Source Files\scene\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\camera\PerspectiveCamera.cpp">
+      <Filter>Source Files\scene\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\info\Info.cpp">
+      <Filter>Source Files\scene\info</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\light\light\BaseLight.cpp">
+      <Filter>Source Files\scene\light\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\light\light\DirectionalLight.cpp">
+      <Filter>Source Files\scene\light\light</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\material\Material.cpp">
+      <Filter>Source Files\scene\material</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\mesh\mesh\Face.cpp">
+      <Filter>Source Files\scene\mesh\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\mesh\mesh\Mesh.cpp">
+      <Filter>Source Files\scene\mesh\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\mesh\text\Text2D.cpp">
+      <Filter>Source Files\scene\mesh\text</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\mesh\triangle\Triangle.cpp">
+      <Filter>Source Files\scene\mesh\triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\mesh\triangle\Triangle2D.cpp">
+      <Filter>Source Files\scene\mesh\triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\mesh\triangle\TriangleList2D.cpp">
+      <Filter>Source Files\scene\mesh\triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\mesh\triangle\TriangleStrip.cpp">
+      <Filter>Source Files\scene\mesh\triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\model\Model3D.cpp">
+      <Filter>Source Files\scene\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\shader\program\Program.cpp">
+      <Filter>Source Files\scene\shader\program</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\shader\shader\Shader.cpp">
+      <Filter>Source Files\scene\shader\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\shader\shaderManager\BaseShaderManager.cpp">
+      <Filter>Source Files\scene\shader\shaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\shader\shaderManager\MainShaderManager.cpp">
+      <Filter>Source Files\scene\shader\shaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\shader\shaderManager\Text2dShaderManager.cpp">
+      <Filter>Source Files\scene\shader\shaderManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\shader\shaderProgram\BaseProgram.cpp">
+      <Filter>Source Files\scene\shader\shaderProgram</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\shader\shaderProgram\MainProgram.cpp">
+      <Filter>Source Files\scene\shader\shaderProgram</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\shader\shaderProgram\Text2dProgram.cpp">
+      <Filter>Source Files\scene\shader\shaderProgram</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\texture\texture\BaseTexture.cpp">
+      <Filter>Source Files\scene\texture\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scene\texture\texture\ColorTexture.cpp">
+      <Filter>Source Files\scene\texture\texture</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\scene\Scene.h">
+      <Filter>Header Files\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\camera\BaseCamera.h">
+      <Filter>Header Files\scene\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\camera\PerspectiveCamera.h">
+      <Filter>Header Files\scene\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\info\Info.h">
+      <Filter>Header Files\scene\info</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\light\light\BaseLight.h">
+      <Filter>Header Files\scene\light\light</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\light\light\DirectionalLight.h">
+      <Filter>Header Files\scene\light\light</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\material\Material.h">
+      <Filter>Header Files\scene\material</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\mesh\mesh\Face.h">
+      <Filter>Header Files\scene\mesh\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\mesh\mesh\Mesh.h">
+      <Filter>Header Files\scene\mesh\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\mesh\text\Text2D.h">
+      <Filter>Header Files\scene\mesh\text</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\mesh\triangle\Triangle.h">
+      <Filter>Header Files\scene\mesh\triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\mesh\triangle\Triangle2D.h">
+      <Filter>Header Files\scene\mesh\triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\mesh\triangle\TriangleList2D.h">
+      <Filter>Header Files\scene\mesh\triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\mesh\triangle\TriangleStrip.h">
+      <Filter>Header Files\scene\mesh\triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\model\Model3D.h">
+      <Filter>Header Files\scene\model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\shader\program\Program.h">
+      <Filter>Header Files\scene\shader\program</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\shader\shader\Shader.h">
+      <Filter>Header Files\scene\shader\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\shader\shaderManager\BaseShaderManager.h">
+      <Filter>Header Files\scene\shader\shaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\shader\shaderManager\MainShaderManager.h">
+      <Filter>Header Files\scene\shader\shaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\shader\shaderManager\Text2dShaderManager.h">
+      <Filter>Header Files\scene\shader\shaderManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\shader\shaderProgram\Text2dProgram.h">
+      <Filter>Header Files\scene\shader\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\shader\shaderProgram\MainProgram.h">
+      <Filter>Header Files\scene\shader\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\shader\shaderProgram\BaseProgram.h">
+      <Filter>Header Files\scene\shader\shaderProgram</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\texture\texture\BaseTexture.h">
+      <Filter>Header Files\scene\texture\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scene\texture\texture\ColorTexture.h">
+      <Filter>Header Files\scene\texture\texture</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\main\scene.frag">
+      <Filter>Resource Files\shaders\main</Filter>
+    </None>
+    <None Include="shaders\main\scene.vert">
+      <Filter>Resource Files\shaders\main</Filter>
+    </None>
+    <None Include="shaders\main\shading.frag">
+      <Filter>Resource Files\shaders\main</Filter>
+    </None>
+    <None Include="shaders\main\shading.glsl">
+      <Filter>Resource Files\shaders\main</Filter>
+    </None>
+    <None Include="shaders\main\shading.vert">
+      <Filter>Resource Files\shaders\main</Filter>
+    </None>
+    <None Include="shaders\main\structures.glsl">
+      <Filter>Resource Files\shaders\main</Filter>
+    </None>
+    <None Include="shaders\text2D\text2D.frag">
+      <Filter>Resource Files\shaders\text2D</Filter>
+    </None>
+    <None Include="shaders\text2D\text2D.vert">
+      <Filter>Resource Files\shaders\text2D</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6c849637-7dbf-49ab-a886-94278f34683a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{aa5e9541-fe01-45ac-95fb-c1bac68eb8b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{90749556-34f0-4bda-814e-88a7d9c75cab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders">
+      <UniqueIdentifier>{0d8c056f-a54e-4538-9173-532542926aad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders\main">
+      <UniqueIdentifier>{f4db01a2-cbd9-4601-8fc3-0142bd6b0880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders\text2D">
+      <UniqueIdentifier>{1d4981be-4112-4264-a042-249cf303a063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene">
+      <UniqueIdentifier>{5293a552-0145-4c22-a84f-37d9d98981be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene">
+      <UniqueIdentifier>{844ab43a-be6f-4558-a0b7-b982da7adb6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\camera">
+      <UniqueIdentifier>{098fc602-5614-4d26-a30e-efb4813f4410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\camera">
+      <UniqueIdentifier>{442daa6f-d59e-4c72-8887-a6d82c9ce6d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\info">
+      <UniqueIdentifier>{4cfe2f74-7863-494b-aa04-13d035717d09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\info">
+      <UniqueIdentifier>{8b64bf20-083a-4869-be27-7d28cbbf19c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\light">
+      <UniqueIdentifier>{5c36b919-a1dd-4270-9a43-88845b46c27f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\light">
+      <UniqueIdentifier>{e6cc8199-114b-4a2e-bba5-c4bf409eecaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\light\light">
+      <UniqueIdentifier>{9931491b-15ee-4b3a-9fa2-a75a75eeab99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\light\light">
+      <UniqueIdentifier>{6fe4eeda-99ce-4b30-9da2-17943dbff229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\material">
+      <UniqueIdentifier>{d1265062-0cb6-4e10-99df-34ca577093f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\material">
+      <UniqueIdentifier>{6f846236-3561-4506-bbc8-2ba875f1dec6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\mesh">
+      <UniqueIdentifier>{35e65504-e771-4935-bf89-28748675213c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\mesh">
+      <UniqueIdentifier>{b7e3eab5-0df0-4984-b382-a71c5d9a769f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\mesh\mesh">
+      <UniqueIdentifier>{47a34e13-f055-4c44-aa1f-8a853d1ae3ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\mesh\text">
+      <UniqueIdentifier>{c1ad0554-767d-4d92-868d-7a8a6fd1e303}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\mesh\triangle">
+      <UniqueIdentifier>{f57b91c0-8245-4943-ba37-2cd7e97e89e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\mesh\mesh">
+      <UniqueIdentifier>{c0e81b82-31c7-403b-9632-96799392f413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\mesh\text">
+      <UniqueIdentifier>{122c790a-4cbf-494d-bae3-cde6eeda25f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\mesh\triangle">
+      <UniqueIdentifier>{095252ae-df67-46a4-a1a4-00379c7ff883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\model">
+      <UniqueIdentifier>{b317569c-b4dd-4a72-b2c4-d023482e9c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\model">
+      <UniqueIdentifier>{433b2864-a994-455c-89ca-08daf4751320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\shader">
+      <UniqueIdentifier>{5c89d54d-9b33-4008-ac4e-555e2ab34e86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\shader">
+      <UniqueIdentifier>{76e8c931-ae58-4d74-be5f-7627517cee9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\shader\program">
+      <UniqueIdentifier>{dce3d3f8-c506-4a80-b2c9-a4b5bae442c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\shader\program">
+      <UniqueIdentifier>{8695560d-846b-4f93-ab1c-d5482e088950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\shader\shader">
+      <UniqueIdentifier>{6c57af71-4d73-4d15-befa-774925b7bed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\shader\shader">
+      <UniqueIdentifier>{677da966-792e-4aac-b869-3c4cb1a48c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\shader\shaderManager">
+      <UniqueIdentifier>{8d7d55cb-a72e-4c2b-9c47-72c38b9ea22e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\shader\shaderManager">
+      <UniqueIdentifier>{3fd3ae76-4231-4fae-8d02-b2d62bda8a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\shader\shaderProgram">
+      <UniqueIdentifier>{67517dd5-ce26-41a8-abf9-8b964a71953b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\shader\shaderProgram">
+      <UniqueIdentifier>{c0077ae9-68c6-40e1-b78c-72f303bb939b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\texture">
+      <UniqueIdentifier>{8b627ed1-d68b-486c-8d4b-d2ee078a3b53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scene\texture\texture">
+      <UniqueIdentifier>{f838b183-a577-497b-be12-d1073aefaf2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\texture">
+      <UniqueIdentifier>{326ad162-e10b-48cc-b9df-32f05ab1f78a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scene\texture\texture">
+      <UniqueIdentifier>{bd9304d9-ec0e-44da-a299-95fc40ef0cdf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

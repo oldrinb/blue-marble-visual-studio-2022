@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\main\scene.frag" />
+    <None Include="shaders\main\scene.vert" />
+    <None Include="shaders\main\shading.frag" />
+    <None Include="shaders\main\shading.glsl" />
+    <None Include="shaders\main\shading.vert" />
+    <None Include="shaders\main\structures.glsl" />
+    <None Include="shaders\text2D\text2D.frag" />
+    <None Include="shaders\text2D\text2D.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\scene\camera\BaseCamera.h" />
+    <ClInclude Include="src\scene\camera\PerspectiveCamera.h" />
+    <ClInclude Include="src\scene\info\Info.h" />
+    <ClInclude Include="src\scene\light\light\BaseLight.h" />
+    <ClInclude Include="src\scene\light\light\DirectionalLight.h" />
+    <ClInclude Include="src\scene\material\Material.h" />
+    <ClInclude Include="src\scene\mesh\mesh\Face.h" />
+    <ClInclude Include="src\scene\mesh\mesh\Mesh.h" />
+    <ClInclude Include="src\scene\mesh\text\Text2D.h" />
+    <ClInclude Include="src\scene\mesh\triangle\Triangle.h" />
+    <ClInclude Include="src\scene\mesh\triangle\Triangle2D.h" />
+    <ClInclude Include="src\scene\mesh\triangle\TriangleList2D.h" />
+    <ClInclude Include="src\scene\mesh\triangle\TriangleStrip.h" />
+    <ClInclude Include="src\scene\model\Model3D.h" />
+    <ClInclude Include="src\scene\Scene.h" />
+    <ClInclude Include="src\scene\shader\program\Program.h" />
+    <ClInclude Include="src\scene\shader\shaderManager\BaseShaderManager.h" />
+    <ClInclude Include="src\scene\shader\shaderManager\MainShaderManager.h" />
+    <ClInclude Include="src\scene\shader\shaderManager\Text2dShaderManager.h" />
+    <ClInclude Include="src\scene\shader\shaderProgram\BaseProgram.h" />
+    <ClInclude Include="src\scene\shader\shaderProgram\MainProgram.h" />
+    <ClInclude Include="src\scene\shader\shaderProgram\Text2dProgram.h" />
+    <ClInclude Include="src\scene\shader\shader\Shader.h" />
+    <ClInclude Include="src\scene\texture\texture\BaseTexture.h" />
+    <ClInclude Include="src\scene\texture\texture\ColorTexture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\scene\camera\BaseCamera.cpp" />
+    <ClCompile Include="src\scene\camera\PerspectiveCamera.cpp" />
+    <ClCompile Include="src\scene\info\Info.cpp" />
+    <ClCompile Include="src\scene\light\light\BaseLight.cpp" />
+    <ClCompile Include="src\scene\light\light\DirectionalLight.cpp" />
+    <ClCompile Include="src\scene\material\Material.cpp" />
+    <ClCompile Include="src\scene\mesh\mesh\Face.cpp" />
+    <ClCompile Include="src\scene\mesh\mesh\Mesh.cpp" />
+    <ClCompile Include="src\scene\mesh\text\Text2D.cpp" />
+    <ClCompile Include="src\scene\mesh\triangle\Triangle.cpp" />
+    <ClCompile Include="src\scene\mesh\triangle\Triangle2D.cpp" />
+    <ClCompile Include="src\scene\mesh\triangle\TriangleList2D.cpp" />
+    <ClCompile Include="src\scene\mesh\triangle\TriangleStrip.cpp" />
+    <ClCompile Include="src\scene\model\Model3D.cpp" />
+    <ClCompile Include="src\scene\Scene.cpp" />
+    <ClCompile Include="src\scene\shader\program\Program.cpp" />
+    <ClCompile Include="src\scene\shader\shaderManager\BaseShaderManager.cpp" />
+    <ClCompile Include="src\scene\shader\shaderManager\MainShaderManager.cpp" />
+    <ClCompile Include="src\scene\shader\shaderManager\Text2dShaderManager.cpp" />
+    <ClCompile Include="src\scene\shader\shaderProgram\BaseProgram.cpp" />
+    <ClCompile Include="src\scene\shader\shaderProgram\MainProgram.cpp" />
+    <ClCompile Include="src\scene\shader\shaderProgram\Text2dProgram.cpp" />
+    <ClCompile Include="src\scene\shader\shader\Shader.cpp" />
+    <ClCompile Include="src\scene\texture\texture\BaseTexture.cpp" />
+    <ClCompile Include="src\scene\texture\texture\ColorTexture.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{dd4caf9b-90f8-4120-a9cf-edaa9573f451}</ProjectGuid>
+    <RootNamespace>BlueMarble</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>BlueMarble</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>lib\gl3w-win64\include;lib\glfw-3.4-win64\include;lib\devil-1.8.0-win64\include;lib\assimp-5.4.3-win64\include;lib\glm-1.0.1;src\scene</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib\gl3w-win64\lib;lib\glfw-3.4-win64\lib-vc2022;lib\devil-1.8.0-win64\lib\x64\Release;lib\assimp-5.4.3-win64\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);opengl32.lib;gl3w.lib;glfw3.lib;assimp-vc143-mt.lib;DevIL.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>lib\gl3w-win64\include;lib\glfw-3.4-win64\include;lib\devil-1.8.0-win64\include;lib\assimp-5.4.3-win64\include;lib\glm-1.0.1;src\scene</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib\gl3w-win64\lib;lib\glfw-3.4-win64\lib-vc2022;lib\devil-1.8.0-win64\lib\x64\Release;lib\assimp-5.4.3-win64\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);opengl32.lib;gl3w.lib;glfw3.lib;assimp-vc143-mt.lib;DevIL.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>lib\gl3w-win64\include;lib\glfw-3.4-win64\include;lib\devil-1.8.0-win64\include;lib\assimp-5.4.3-win64\include;lib\glm-1.0.1;src\scene</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib\gl3w-win64\lib;lib\glfw-3.4-win64\lib-vc2022;lib\devil-1.8.0-win64\lib\x64\Release;lib\assimp-5.4.3-win64\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);opengl32.lib;gl3w.lib;glfw3.lib;assimp-vc143-mt.lib;DevIL.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>lib\gl3w-win64\include;lib\glfw-3.4-win64\include;lib\devil-1.8.0-win64\include;lib\assimp-5.4.3-win64\include;lib\glm-1.0.1;src\scene</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib\gl3w-win64\lib;lib\glfw-3.4-win64\lib-vc2022;lib\devil-1.8.0-win64\lib\x64\Release;lib\assimp-5.4.3-win64\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);opengl32.lib;gl3w.lib;glfw3.lib;assimp-vc143-mt.lib;DevIL.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
